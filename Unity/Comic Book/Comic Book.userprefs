@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scenes\Act One\ActOneBranch.cs">
+    <Files>
+      <File FileName="Assets\Scenes\Intro\IntroBranch.cs" Line="129" Column="3" />
+      <File FileName="Assets\Scenes\Act One\ActOneBranch.cs" Line="130" Column="17" />
+      <File FileName="Assets\Scenes\Act Three\ActThreeBranch.cs" Line="128" Column="17" />
+      <File FileName="Assets\Scenes\Act Two\ActTwoBranch.cs" Line="128" Column="17" />
+      <File FileName="Assets\Scenes\The End\EndBranch.cs" Line="3" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

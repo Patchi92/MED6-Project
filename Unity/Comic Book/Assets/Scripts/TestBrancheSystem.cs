@@ -1,243 +1,64 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class TestBrancheSystem : MonoBehaviour {
-
+	
 	// Pause
 	bool pause = false;
 	
-	//Camera
-	public GameObject CamControl;
-	bool GameMode = false;
 
+	
+	
+	
 	// UI
 	public GameObject UI;
-
+	public Text ButtonOne;
+	public Text ButtonTwo;
 	
-
+	//Button
+	public GameObject hideButton;
+	
+	
+	
 	// Branche Choices
 	
-	//Act 1
-		
-		//Intro
-	bool actOneChoiceOne = false;
-	bool actOneChoiceTwo = false;
-
-		//Choice from
-	bool actOneChoiceThree = false;
-	bool actOneChoiceFour = false;
-
-		//Choice from
-	bool actOneChoiceFive = false;
-	bool actOneChoiceSix = false;
-
-
-
-
-
+	bool Intro = true;
+	bool DelTwoA = false;
+	bool DelTwoAA = false;
+	bool DelTwoAB = false;
+	bool DelTwoAAA = false;
+	bool DelTwoAAB = false;
+	bool DelTwoABA = false;
+	bool DelTwoABB = false;
+	bool DelThree = false;
+	bool DelThreeA = false;
+	bool DelThreeB = false;
 	
 	
-	//Act 2 Scenario 1
-
-		//Intro
-	bool actTwosOneChoiceOne = false;
-	bool actTwosOneChoiceTwo = false;
-	bool actTwosOneChoiceThree = false;
-
-		//Choice from
-	bool actTwosOneChoiceFour = false;
-	bool actTwosOneChoiceFive = false;
-	bool actTwosOneChoiceSix = false;
-		
-		//Choice from
-	bool actTwosOneChoiceSeven = false;
-	bool actTwosOneChoiceEight = false;
-	bool actTwosOneChoiceNine = false;
-
-		//Choice from
-	bool actTwosOneChoiceTen = false;
-	bool actTwosOneChoiceEleven = false;
-	bool actTwosOneChoiceTwelve = false;
-
-
-
-
-
 	
-	//Act 2 Scenario 2
 	
-	//Intro
-	bool actTwosTwoChoiceOne = false;
-	bool actTwosTwoChoiceTwo = false;
-	bool actTwosTwoChoiceThree = false;
 	
-	//Choice from
-	bool actTwosTwoChoiceFour = false;
-	bool actTwosTwoChoiceFive = false;
-	bool actTwosTwoChoiceSix = false;
-	
-	//Choice from
-	bool actTwosTwoChoiceSeven = false;
-	bool actTwosTwoChoiceEight = false;
-	bool actTwosTwoChoiceNine = false;
-	
-	//Choice from
-	bool actTwosTwoChoiceTen = false;
-	bool actTwosTwoChoiceEleven = false;
-	bool actTwosTwoChoiceTwelve = false;
-	
-
-
-
-
-	//Act 2 Scenario 3
-
-	//Intro
-	bool actTwosThreeChoiceOne = false;
-	bool actTwosThreeChoiceTwo = false;
-	bool actTwosThreeChoiceThree = false;
-	
-	//Choice from
-	bool actTwosThreeChoiceFour = false;
-	bool actTwosThreeChoiceFive = false;
-	bool actTwosThreeChoiceSix = false;
-	
-	//Choice from
-	bool actTwosThreeChoiceSeven = false;
-	bool actTwosThreeChoiceEight = false;
-	bool actTwosThreeChoiceNine = false;
-	
-	//Choice from
-	bool actTwosThreeChoiceTen = false;
-	bool actTwosThreeChoiceEleven = false;
-	bool actTwosThreeChoiceTwelve = false;
-
-
-
-
-
-	//Act 3 Scenario 1
-
-	//Intro
-	bool actThreesOneChoiceOne = false;
-	bool actThreesOneChoiceTwo = false;
-	bool actThreesOneChoiceThree = false;
-	
-	//Choice from
-	bool actThreesOneChoiceFour = false;
-	bool actThreesOneChoiceFive = false;
-	bool actThreesOneChoiceSix = false;
-	
-	//Choice from
-	bool actThreesOneChoiceSeven = false;
-	bool actThreesOneChoiceEight = false;
-	bool actThreesOneChoiceNine = false;
-	
-	//Choice from
-	bool actThreesOneChoiceTen = false;
-	bool actThreesOneChoiceEleven = false;
-	bool actThreesOneChoiceTwelve = false;
-
-
-
-
-	//Act 3 Scenario 2
-
-	//Intro
-	bool actThreesTwoChoiceOne = false;
-	bool actThreesTwoChoiceTwo = false;
-	bool actThreesTwoChoiceThree = false;
-	
-	//Choice from
-	bool actThreesTwoChoiceFour = false;
-	bool actThreesTwoChoiceFive = false;
-	bool actThreesTwoChoiceSix = false;
-	
-	//Choice from
-	bool actThreesTwoChoiceSeven = false;
-	bool actThreesTwoChoiceEight = false;
-	bool actThreesTwoChoiceNine = false;
-	
-	//Choice from
-	bool actThreesTwoChoiceTen = false;
-	bool actThreesTwoChoiceEleven = false;
-	bool actThreesTwoChoiceTwelve = false;
-
-
-
-
-	//Act 3 Scenario 3
-
-	//Intro
-	bool actThreesThreeChoiceOne = false;
-	bool actThreesThreeChoiceTwo = false;
-	bool actThreesThreeChoiceThree = false;
-	
-	//Choice from
-	bool actThreesThreeChoiceFour = false;
-	bool actThreesThreeChoiceFive = false;
-	bool actThreesThreeChoiceSix = false;
-	
-	//Choice from
-	bool actThreesThreeChoiceSeven = false;
-	bool actThreesThreeChoiceEight = false;
-	bool actThreesThreeChoiceNine = false;
-	
-	//Choice from
-	bool actThreesThreeChoiceTen = false;
-	bool actThreesThreeChoiceEleven = false;
-	bool actThreesThreeChoiceTwelve = false;
-
-
-
-	//The End
-	bool endChoiceOne = false;
-	bool endChoiceTwo = false;
-	bool endChoiceThree = false;
-
 	
 	// Clips Avalible
 	
 	MovieTexture movie;
 	
 	//Intro	
-	public MovieTexture sIntroMovieOne;
-	
-	//Scenario 1
-	public MovieTexture sOneMovieOne;
-	public MovieTexture sOneMovieTwo;
-	public MovieTexture sOneMovieThree;
-	public MovieTexture sOneMovieFour;
-	public MovieTexture sOneMovieFive;
-	public MovieTexture sOneMovieSix;
+	public MovieTexture IntroMovie;
 
 	
-	
-	//Scenario 2
-	public MovieTexture sTwoMovieOne;
-	public MovieTexture sTwoMovieTwo;
-	public MovieTexture sTwoMovieThree;
-	public MovieTexture sTwoMovieFour;
-	public MovieTexture sTwoMovieFive;
-	public MovieTexture sTwoMovieSix;
-	public MovieTexture sTwoMovieSeven;
-	
-	
-	
-	//Scenario 3
-	public MovieTexture sThreeMovieOne;
-	public MovieTexture sThreeMovieTwo;
-	public MovieTexture sThreeMovieThree;
-	public MovieTexture sThreeMovieFour;
-	public MovieTexture sThreeMovieFive;
-	public MovieTexture sThreeMovieSix;
-	public MovieTexture sThreeMovieSeven;
-	
-	
-	//End
-	public MovieTexture sEndMovieOne;
-	public MovieTexture sEndMovieTwo;
-	public MovieTexture sEndMovieThree;
+	//Choice
+	public MovieTexture MovieOne;
+	public MovieTexture MovieTwo;
+	public MovieTexture MovieThree;
+	public MovieTexture MovieFour;
+	public MovieTexture MovieFive;
+	public MovieTexture MovieSix;
+	public MovieTexture MovieSeven;
+	public MovieTexture MovieEight;
+	public MovieTexture MovieNine;
+	public MovieTexture MovieTen;
 	
 	
 	
@@ -247,41 +68,172 @@ public class TestBrancheSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
 	{
-		movie = sIntroMovieOne;
+		movie = IntroMovie;
 		GetComponent<Renderer>().material.mainTexture = movie as MovieTexture;
 		GetComponent<AudioSource>().clip = movie.audioClip;
 		movie.Play();
 		GetComponent<AudioSource>().Play();
-
+		
+	
+		
 		UI.SetActive(false);
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		
-		Control CamSwitch =  CamControl.GetComponent<Control>();
+		hideButton.SetActive(false);
+
 		
 		if(!movie.isPlaying && !pause) {
+			
 
-			UI.SetActive(true);
+			if(!IntroMovie.isPlaying && Intro) {
+
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Køkken";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Stue";
+
+				UI.SetActive(true);
+
+			}
+
+			if(!MovieOne.isPlaying && DelTwoA) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Brød";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Kiks";
+				
+				UI.SetActive(true);
+				Intro = false;
+			}
+
+			if(!MovieTwo.isPlaying && DelThree) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Kig Ud";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Tag En Lur";
+				
+				UI.SetActive(true);
+				Intro =false;
+			}
+
+			if(!MovieThree.isPlaying && DelTwoAA) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Stue";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Soveværelse";
+				
+				UI.SetActive(true);
+				DelTwoA = false;
+			}
+
+			if(!MovieFour.isPlaying && DelTwoAB) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Stue";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Soveværelse";
+				
+				UI.SetActive(true);
+				DelTwoA = false;
+			}
+
+			if(!MovieFive.isPlaying && DelTwoAAA) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Retry";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Quit";
+				
+				UI.SetActive(true);
+				DelTwoAA = false;
+			}
+
+			if(!MovieSix.isPlaying && DelTwoAAB) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Retry";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Quit";
+				
+				UI.SetActive(true);
+				DelTwoAA = false;
+			}
+
+			if(!MovieSeven.isPlaying && DelTwoABA) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Retry";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Quit";
+				
+				UI.SetActive(true);
+				DelTwoAB = false;
+			}
+
+			if(!MovieEight.isPlaying && DelTwoABB) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Retry";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Quit";
+				
+				UI.SetActive(true);
+				DelTwoAB = false;
+			}
+
+			if(!MovieNine.isPlaying && DelThreeA) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Retry";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Quit";
+				
+				UI.SetActive(true);
+				DelThree = false;
+			}
+
+			if(!MovieTen.isPlaying && DelThreeB) {
+				
+				Text textOne = ButtonOne.GetComponent<Text>();
+				textOne.text = "Retry";
+				
+				Text textTwo = ButtonTwo.GetComponent<Text>();
+				textTwo.text = "Quit";
+				
+				UI.SetActive(true);
+				DelThree = false;
+			}
+
+
 		}
 		
-		if(movie.isPlaying && !pause) {
-			CamSwitch.MovieSwitch();
-		}
 
-		if(GameMode == true) {
-			UI.SetActive(false);
-			CamSwitch.GameSwitch();
-		}
-
-
-
-
+		
+		
+		
+		
 	}
-
-
-
+	
+	
+	
 	void OnMouseDown()
 	{
 		
@@ -298,28 +250,202 @@ public class TestBrancheSystem : MonoBehaviour {
 			GetComponent<AudioSource>().Play();
 			pause = false;
 		}
-
+		
 		
 	}
+	
+	
 
-
+	
+	
+	
 	public void ClipOne() {
-		movie = sOneMovieOne;
+		
+		if(Intro) {
+			
+			movie = MovieOne;
+			
+			DelTwoA = true;
+			pause = false;
+		}
+		
+		if(DelTwoA && !Intro) {
+			
+			movie = MovieThree;
+			
+			DelTwoAA = true;
+			pause = false;
 
+		}
+		
+		if(DelThree && !Intro) {
+			
+			movie = MovieNine;
 
+			DelThreeA = true;
+			pause = false;
 
+		}
+		
+		if(DelTwoAA && !DelTwoA) {
+			
+			movie = MovieFive;
+
+			DelTwoAAA = true;
+			pause = false;
+
+		}
+		
+		if(DelTwoAB && !DelTwoA) {
+			
+			movie = MovieSeven;
+
+			DelTwoABA = true;
+			pause = false;
+
+		}
+		
+		if(DelTwoAAA && !DelTwoAA) {
+			
+			Application.LoadLevel("Main Menu");
+			
+
+		}
+		
+		if(DelTwoAAB  && !DelTwoAA) {
+			
+			Application.LoadLevel("Main Menu");
+			
+
+		}
+		
+		if(DelTwoABA && !DelTwoAB) {
+			
+			Application.LoadLevel("Main Menu");
+			
+		
+		}
+		
+		if(DelTwoABB && !DelTwoAB) {
+			
+			Application.LoadLevel("Main Menu");
+			
+
+		}
+		
+		if(DelThreeA && !DelThree) {
+			
+			Application.LoadLevel("Main Menu");
+			
+
+		}
+		
+		if(DelThreeB && !DelThree) {
+			
+			Application.LoadLevel("Main Menu");
+			
+
+		}
+		
+		
+		
+		
 		UI.SetActive(false);
-
+		
 		GetComponent<Renderer>().material.mainTexture = movie as MovieTexture;
 		GetComponent<AudioSource>().clip = movie.audioClip;
 		movie.Play();
 		GetComponent<AudioSource>().Play();
 	}
-
-
+	
+	
 	public void ClipTwo() {
-		movie = sOneMovieOne;
 		
+		if(Intro) {
+			
+			movie = MovieTwo;
+			
+			DelThree = true;
+			pause = false;
+		}
+		
+		if(DelTwoA && !Intro) {
+			
+			movie = MovieFour;
+			
+			DelTwoAB = true;
+			pause = false;
+			
+		}
+		
+		if(DelThree  && !Intro) {
+			
+			movie = MovieTen;
+			
+			DelThreeB = true;
+			pause = false;
+			
+		}
+		
+		if(DelTwoAA  && !DelTwoA) {
+			
+			movie = MovieSix;
+			
+			DelTwoAAB = true;
+			pause = false;
+			
+		}
+		
+		if(DelTwoAB && !DelTwoA) {
+			
+			movie = MovieEight;
+			
+			DelTwoABB = true;
+			pause = false;
+			
+		}
+		
+		if(DelTwoAAA && !DelTwoAA) {
+			
+			Application.Quit();
+			
+			
+		}
+		
+		if(DelTwoAAB && !DelTwoAA) {
+			
+			Application.Quit();
+			
+			
+		}
+		
+		if(DelTwoABA && !DelTwoAB) {
+			
+			Application.Quit();
+			
+			
+		}
+		
+		if(DelTwoABB && !DelTwoAB) {
+			
+			Application.Quit();
+			
+			
+		}
+		
+		if(DelThreeA && !DelThree) {
+			
+			Application.Quit();
+			
+			
+		}
+		
+		if(DelThreeB && !DelThree) {
+			
+			Application.Quit();
+			
+			
+		}
 		
 		
 		UI.SetActive(false);
@@ -329,19 +455,8 @@ public class TestBrancheSystem : MonoBehaviour {
 		movie.Play();
 		GetComponent<AudioSource>().Play();
 	}
-
-
-	public void ClipThree() {
-		movie = sOneMovieOne;
-		
-		
-		
-		UI.SetActive(false);
-		
-		GetComponent<Renderer>().material.mainTexture = movie as MovieTexture;
-		GetComponent<AudioSource>().clip = movie.audioClip;
-		movie.Play();
-		GetComponent<AudioSource>().Play();
-	}
+	
+	
+	
 	
 }

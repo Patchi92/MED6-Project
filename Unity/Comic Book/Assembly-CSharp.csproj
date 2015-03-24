@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EvuControl.cs" />
      <Compile Include="Assets\Main Menu\IntroMenu.cs" />
      <Compile Include="Assets\Scenes\Act One\ActOneBranch.cs" />
      <Compile Include="Assets\Scenes\Act Three\ActThreeBranch.cs" />

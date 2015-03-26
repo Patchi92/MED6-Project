@@ -13,6 +13,9 @@ public class EvuControl : MonoBehaviour {
 
 	string path;
 
+	int timer = 0;
+	int check = 10;
+	bool done = false;
 
 
 	bool oneOne;
@@ -56,7 +59,13 @@ public class EvuControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-	
+		timer++;
+
+		if((timer == check) && done == true) {
+			mailDone();
+		}
+
+
 
 		if(oneOne == true) {
 
@@ -112,7 +121,9 @@ public class EvuControl : MonoBehaviour {
 		Debug.Log("success");
 
 
-		mailDone();
+
+			timer = 0;
+			done = true;
 
 
 
@@ -121,6 +132,7 @@ public class EvuControl : MonoBehaviour {
 	void mailDone () {
 
 		GetComponent<AudioSource>().Play();
+		Application.Quit();
 
 	
 	}

@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\TestBrancheSystem.cs" />
      <Compile Include="Assets\TestObject.cs" />
+     <None Include="Assets\TestToUs.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -111,8 +111,9 @@ public class EvuControl : MonoBehaviour {
 
 		
 		SmtpClient smtpServer = new SmtpClient("smtp.live.com");
-		smtpServer.Port = 587;
 		smtpServer.Credentials = new System.Net.NetworkCredential("comicmed6@hotmail.com", "TestForUs!") as ICredentialsByHost;
+		smtpServer.UseDefaultCredentials = false;
+		smtpServer.Port = 587;
 		smtpServer.EnableSsl = true;
 		ServicePointManager.ServerCertificateValidationCallback = 
 			delegate(object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) 

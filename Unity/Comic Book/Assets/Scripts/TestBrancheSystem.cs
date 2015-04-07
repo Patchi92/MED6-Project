@@ -8,7 +8,8 @@ public class TestBrancheSystem : MonoBehaviour {
 	bool pause = false;
 	
 
-	
+	//Camera
+	public GameObject CamControl;
 	
 	
 	// UI
@@ -83,7 +84,23 @@ public class TestBrancheSystem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+		Control CamSwitch =  CamControl.GetComponent<Control>();
 		
+		if(!movie.isPlaying && !pause) {
+			CamSwitch.GameSwitch();
+		}
+		
+		if(movie.isPlaying && !pause) {
+			CamSwitch.MovieSwitch();
+		}
+
+
+
+
+
+
+
 		hideButton.SetActive(false);
 
 		
@@ -454,6 +471,11 @@ public class TestBrancheSystem : MonoBehaviour {
 		GetComponent<AudioSource>().clip = movie.audioClip;
 		movie.Play();
 		GetComponent<AudioSource>().Play();
+	}
+
+	public void Speak() {
+
+
 	}
 	
 	

@@ -12,7 +12,7 @@ public class EvuControl : MonoBehaviour {
 	int Number = 0;
 	int Page = 1;
 
-
+	bool locked = true;
 
 
 	// Questions
@@ -196,22 +196,22 @@ public class EvuControl : MonoBehaviour {
 
 
 			if(Page == 1)
-				questionOnePageOne = 1;
+				questionOnePageOne = 5;
 
 			if(Page == 2)
-				questionOnePageTwo = 1;
+				questionOnePageTwo = 5;
 			
 			if(Page == 3)
-				questionOnePageThree = 1;
+				questionOnePageThree = 5;
 
 			if(Page == 4)
-				questionOnePageFour = 1;
+				questionOnePageFour = 5;
 
 			if(Page == 5)
 				questionOnePageFive = 1;
 
 			if(Page == 6)
-				questionOnePageSix = 1;
+				questionOnePageSix = 5;
 
 			oneCheckTwo.GetComponent<Toggle>().isOn = false;
 			oneCheckThree.GetComponent<Toggle>().isOn = false;
@@ -225,22 +225,22 @@ public class EvuControl : MonoBehaviour {
 
 
 			if(Page == 1)
-				questionOnePageOne = 2;
+				questionOnePageOne = 4;
 			
 			if(Page == 2)
-				questionOnePageTwo = 2;
+				questionOnePageTwo = 4;
 			
 			if(Page == 3)
-				questionOnePageThree = 2;
+				questionOnePageThree = 4;
 			
 			if(Page == 4)
-				questionOnePageFour = 2;
+				questionOnePageFour = 4;
 			
 			if(Page == 5)
 				questionOnePageFive = 2;
 			
 			if(Page == 6)
-				questionOnePageSix = 2;
+				questionOnePageSix = 4;
 			
 			oneCheckFive.GetComponent<Toggle>().isOn = false;
 			oneCheckThree.GetComponent<Toggle>().isOn = false;
@@ -287,22 +287,22 @@ public class EvuControl : MonoBehaviour {
 
 
 			if(Page == 1)
-				questionOnePageOne = 4;
+				questionOnePageOne = 2;
 			
 			if(Page == 2)
-				questionOnePageTwo = 4;
+				questionOnePageTwo = 2;
 			
 			if(Page == 3)
-				questionOnePageThree = 4;
+				questionOnePageThree = 2;
 			
 			if(Page == 4)
-				questionOnePageFour = 4;
+				questionOnePageFour = 2;
 			
 			if(Page == 5)
 				questionOnePageFive = 4;
 			
 			if(Page == 6)
-				questionOnePageSix = 4;
+				questionOnePageSix = 2;
 
 			
 			oneCheckTwo.GetComponent<Toggle>().isOn = false;
@@ -318,22 +318,22 @@ public class EvuControl : MonoBehaviour {
 
 
 			if(Page == 1)
-				questionOnePageOne = 5;
+				questionOnePageOne = 1;
 			
 			if(Page == 2)
-				questionOnePageTwo = 5;
+				questionOnePageTwo = 1;
 			
 			if(Page == 3)
-				questionOnePageThree = 5;
+				questionOnePageThree = 1;
 			
 			if(Page == 4)
-				questionOnePageFour = 5;
+				questionOnePageFour = 1;
 			
 			if(Page == 5)
 				questionOnePageFive = 5;
 			
 			if(Page == 6)
-				questionOnePageSix = 5;
+				questionOnePageSix = 1;
 
 			oneCheckTwo.GetComponent<Toggle>().isOn = false;
 			oneCheckThree.GetComponent<Toggle>().isOn = false;
@@ -354,22 +354,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionTwoPageOne = 1;
+				questionTwoPageOne = 5;
 			
 			if(Page == 2)
-				questionTwoPageTwo = 1;
+				questionTwoPageTwo = 5;
 			
 			if(Page == 3)
-				questionTwoPageThree = 1;
+				questionTwoPageThree = 5;
 			
 			if(Page == 4)
-				questionTwoPageFour = 1;
+				questionTwoPageFour = 5;
 			
 			if(Page == 5)
-				questionTwoPageFive = 1;
+				questionTwoPageFive = 5;
 			
 			if(Page == 6)
-				questionTwoPageSix = 1;
+				questionTwoPageSix = 5;
 			
 			twoCheckTwo.GetComponent<Toggle>().isOn = false;
 			twoCheckThree.GetComponent<Toggle>().isOn = false;
@@ -383,22 +383,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionTwoPageOne = 2;
+				questionTwoPageOne = 4;
 			
 			if(Page == 2)
-				questionTwoPageTwo = 2;
+				questionTwoPageTwo = 4;
 			
 			if(Page == 3)
-				questionTwoPageThree = 2;
+				questionTwoPageThree = 4;
 			
 			if(Page == 4)
-				questionTwoPageFour = 2;
+				questionTwoPageFour = 4;
 			
 			if(Page == 5)
-				questionTwoPageFive = 2;
+				questionTwoPageFive = 4;
 			
 			if(Page == 6)
-				questionTwoPageSix = 2;
+				questionTwoPageSix = 4;
 			
 			
 			twoCheckFive.GetComponent<Toggle>().isOn = false;
@@ -446,22 +446,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionTwoPageOne = 4;
+				questionTwoPageOne = 2;
 			
 			if(Page == 2)
-				questionTwoPageTwo = 4;
+				questionTwoPageTwo = 2;
 			
 			if(Page == 3)
-				questionTwoPageThree = 4;
+				questionTwoPageThree = 2;
 			
 			if(Page == 4)
-				questionTwoPageFour = 4;
+				questionTwoPageFour = 2;
 			
 			if(Page == 5)
-				questionTwoPageFive = 4;
+				questionTwoPageFive = 2;
 			
 			if(Page == 6)
-				questionTwoPageSix = 4;
+				questionTwoPageSix = 2;
 			
 			
 			twoCheckTwo.GetComponent<Toggle>().isOn = false;
@@ -477,22 +477,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionTwoPageOne = 5;
+				questionTwoPageOne = 1;
 			
 			if(Page == 2)
-				questionTwoPageTwo = 5;
+				questionTwoPageTwo = 1;
 			
 			if(Page == 3)
-				questionTwoPageThree = 5;
+				questionTwoPageThree = 1;
 			
 			if(Page == 4)
-				questionTwoPageFour = 5;
+				questionTwoPageFour = 1;
 			
 			if(Page == 5)
-				questionTwoPageFive = 5;
+				questionTwoPageFive = 1;
 			
 			if(Page == 6)
-				questionTwoPageSix = 5;
+				questionTwoPageSix = 1;
 			
 			twoCheckTwo.GetComponent<Toggle>().isOn = false;
 			twoCheckThree.GetComponent<Toggle>().isOn = false;
@@ -516,22 +516,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionThreePageOne = 1;
+				questionThreePageOne = 5;
 			
 			if(Page == 2)
 				questionThreePageTwo = 1;
 			
 			if(Page == 3)
-				questionThreePageThree = 1;
+				questionThreePageThree = 5;
 			
 			if(Page == 4)
-				questionThreePageFour = 1;
+				questionThreePageFour = 5;
 			
 			if(Page == 5)
-				questionThreePageFive = 1;
+				questionThreePageFive = 5;
 			
 			if(Page == 6)
-				questionThreePageSix = 1;
+				questionThreePageSix = 5;
 			
 			threeCheckTwo.GetComponent<Toggle>().isOn = false;
 			threeCheckThree.GetComponent<Toggle>().isOn = false;
@@ -545,22 +545,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionThreePageOne = 2;
+				questionThreePageOne = 4;
 			
 			if(Page == 2)
 				questionThreePageTwo = 2;
 			
 			if(Page == 3)
-				questionThreePageThree = 2;
+				questionThreePageThree = 4;
 			
 			if(Page == 4)
-				questionThreePageFour = 2;
+				questionThreePageFour = 4;
 			
 			if(Page == 5)
-				questionThreePageFive = 2;
+				questionThreePageFive = 4;
 			
 			if(Page == 6)
-				questionThreePageSix = 2;
+				questionThreePageSix = 4;
 			
 			
 			threeCheckFive.GetComponent<Toggle>().isOn = false;
@@ -608,22 +608,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionThreePageOne = 4;
+				questionThreePageOne = 2;
 			
 			if(Page == 2)
 				questionThreePageTwo = 4;
 			
 			if(Page == 3)
-				questionThreePageThree = 4;
+				questionThreePageThree = 2;
 			
 			if(Page == 4)
-				questionThreePageFour = 4;
+				questionThreePageFour = 2;
 			
 			if(Page == 5)
-				questionThreePageFive = 4;
+				questionThreePageFive = 2;
 					
 			if(Page == 6)
-				questionThreePageSix = 4;
+				questionThreePageSix = 2;
 			
 			
 			threeCheckTwo.GetComponent<Toggle>().isOn = false;
@@ -639,22 +639,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionThreePageOne = 5;
+				questionThreePageOne = 1;
 			
 			if(Page == 2)
 				questionThreePageTwo = 5;
 			
 			if(Page == 3)
-				questionThreePageThree = 5;
+				questionThreePageThree = 1;
 			
 			if(Page == 4)
-				questionThreePageFour = 5;
+				questionThreePageFour = 1;
 			
 			if(Page == 5)
-				questionThreePageFive = 5;
+				questionThreePageFive = 1;
 			
 			if(Page == 6)
-				questionThreePageSix = 5;
+				questionThreePageSix = 1;
 			
 			threeCheckTwo.GetComponent<Toggle>().isOn = false;
 			threeCheckThree.GetComponent<Toggle>().isOn = false;
@@ -675,22 +675,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionFourPageOne = 1;
+				questionFourPageOne = 5;
 			
 			if(Page == 2)
 				questionFourPageTwo = 1;
 			
 			if(Page == 3)
-				questionFourPageThree = 1;
+				questionFourPageThree = 5;
 			
 			if(Page == 4)
-				questionFourPageFour = 1;
+				questionFourPageFour = 5;
 			
 			if(Page == 5)
-				questionFourPageFive = 1;
+				questionFourPageFive = 5;
 			
 			if(Page == 6)
-				questionFourPageSix = 1;
+				questionFourPageSix = 5;
 			
 			fourCheckTwo.GetComponent<Toggle>().isOn = false;
 			fourCheckThree.GetComponent<Toggle>().isOn = false;
@@ -704,22 +704,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionFourPageOne = 2;
+				questionFourPageOne = 4;
 			
 			if(Page == 2)
 				questionFourPageTwo = 2;
 			
 			if(Page == 3)
-				questionFourPageThree = 2;
+				questionFourPageThree = 4;
 			
 			if(Page == 4)
-				questionFourPageFour = 2;
+				questionFourPageFour = 4;
 			
 			if(Page == 5)
-				questionFourPageFive = 2;
+				questionFourPageFive = 4;
 			
 			if(Page == 6)
-				questionFourPageSix = 2;
+				questionFourPageSix = 4;
 			
 			
 			fourCheckFive.GetComponent<Toggle>().isOn = false;
@@ -767,22 +767,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionFourPageOne = 4;
+				questionFourPageOne = 2;
 			
 			if(Page == 2)
 				questionFourPageTwo = 4;
 			
 			if(Page == 3)
-				questionFourPageThree = 4;
+				questionFourPageThree = 2;
 			
 			if(Page == 4)
-				questionFourPageFour = 4;
+				questionFourPageFour = 2;
 			
 			if(Page == 5)
-				questionFourPageFive = 4;
+				questionFourPageFive = 2;
 					
 			if(Page == 6)
-				questionFourPageSix = 4;
+				questionFourPageSix = 2;
 			
 			
 			fourCheckTwo.GetComponent<Toggle>().isOn = false;
@@ -798,22 +798,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionFourPageOne = 5;
+				questionFourPageOne = 1;
 			
 			if(Page == 2)
 				questionFourPageTwo = 5;
 			
 			if(Page == 3)
-				questionFourPageThree = 5;
+				questionFourPageThree = 1;
 			
 			if(Page == 4)
-				questionFourPageFour = 5;
+				questionFourPageFour = 1;
 			
 			if(Page == 5)
-				questionFourPageFive = 5;
+				questionFourPageFive = 1;
 			
 			if(Page == 6)
-				questionFourPageSix = 5;
+				questionFourPageSix = 1;
 			
 			fourCheckTwo.GetComponent<Toggle>().isOn = false;
 			fourCheckThree.GetComponent<Toggle>().isOn = false;
@@ -834,22 +834,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionFivePageOne = 1;
+				questionFivePageOne = 5;
 			
 			if(Page == 2)
-				questionFivePageTwo = 1;
+				questionFivePageTwo = 5;
 			
 			if(Page == 3)
-				questionFivePageThree = 1;
+				questionFivePageThree = 5;
 			
 			if(Page == 4)
-				questionFivePageFour = 1;
+				questionFivePageFour = 5;
 			
 			if(Page == 5)
-				questionFivePageFive = 1;
+				questionFivePageFive = 5;
 			
 			if(Page == 6)
-				questionFivePageSix = 1;
+				questionFivePageSix = 5;
 			
 			fiveCheckTwo.GetComponent<Toggle>().isOn = false;
 			fiveCheckThree.GetComponent<Toggle>().isOn = false;
@@ -863,22 +863,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionFivePageOne = 2;
+				questionFivePageOne = 4;
 			
 			if(Page == 2)
-				questionFivePageTwo = 2;
+				questionFivePageTwo = 4;
 			
 			if(Page == 3)
-				questionFivePageThree = 2;
+				questionFivePageThree = 4;
 			
 			if(Page == 4)
-				questionFivePageFour = 2;
+				questionFivePageFour = 4;
 			
 			if(Page == 5)
-				questionFivePageFive = 2;
+				questionFivePageFive = 4;
 			
 			if(Page == 6)
-				questionFivePageSix = 2;
+				questionFivePageSix = 4;
 			
 			
 			fiveCheckFive.GetComponent<Toggle>().isOn = false;
@@ -926,22 +926,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionFivePageOne = 4;
+				questionFivePageOne = 2;
 			
 			if(Page == 2)
-				questionFivePageTwo = 4;
+				questionFivePageTwo = 2;
 			
 			if(Page == 3)
-				questionFivePageThree = 4;
+				questionFivePageThree = 2;
 			
 			if(Page == 4)
-				questionFivePageFour = 4;
+				questionFivePageFour = 2;
 			
 			if(Page == 5)
-				questionFivePageFive = 4;
+				questionFivePageFive = 2;
 					
 			if(Page == 6)
-				questionFivePageSix = 4;
+				questionFivePageSix = 2;
 			
 			
 			fiveCheckTwo.GetComponent<Toggle>().isOn = false;
@@ -957,22 +957,22 @@ public class EvuControl : MonoBehaviour {
 			
 			
 			if(Page == 1)
-				questionFivePageOne = 5;
+				questionFivePageOne = 1;
 			
 			if(Page == 2)
-				questionFivePageTwo = 5;
+				questionFivePageTwo = 1;
 			
 			if(Page == 3)
-				questionFivePageThree = 5;
+				questionFivePageThree = 1;
 			
 			if(Page == 4)
-				questionFivePageFour = 5;
+				questionFivePageFour = 1;
 			
 			if(Page == 5)
-				questionFivePageFive = 5;
+				questionFivePageFive = 1;
 			
 			if(Page == 6)
-				questionFivePageSix = 5;
+				questionFivePageSix = 1;
 			
 			fiveCheckTwo.GetComponent<Toggle>().isOn = false;
 			fiveCheckThree.GetComponent<Toggle>().isOn = false;

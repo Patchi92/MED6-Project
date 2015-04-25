@@ -199,7 +199,7 @@ public class EvuControl : MonoBehaviour {
 
 
 		if(Page == 0) {
-			oneQuestion.GetComponent<Text>().text = "I often spend a lot of time playing games";
+			oneQuestion.GetComponent<Text>().text = "I often spend a lot of time playing games - I play approximately X hours a week";
 			twoQuestion.GetComponent<Text>().text = "I am eager to start playing the game.";
 			threeQuestion.GetComponent<Text>().text = "I tend to like games where narrative plays an important role.";
 			fourQuestion.GetComponent<Text>().text = "I think narrative is essential for my game play experience.";

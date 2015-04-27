@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI;
 using System.Reflection;
 public class Evaluate : MonoBehaviour {
@@ -26,6 +27,8 @@ public class Evaluate : MonoBehaviour {
 	int pre = 0;
 	int mid = 0;
 	int post = 0;
+
+	string pointer;
 
 
 	// Use this for initialization
@@ -86,23 +89,34 @@ public class Evaluate : MonoBehaviour {
 
 		
 
-
+		/*
 		preTest.GetComponent<Text>().text = infoMatrix[0].ToString() + "\n" + infoMatrix[1].ToString() + "\n" + infoMatrix[2].ToString() + "\n" + infoMatrix[3].ToString() + "\n" + infoMatrix[4].ToString() + "\n" + infoMatrix[5].ToString() + "\n" + infoMatrix[6].ToString() + "\n" + infoMatrix[7].ToString() + "\n" + infoMatrix[8].ToString() + "\n" + infoMatrix[9].ToString();
 		
 		midTest.GetComponent<Text>().text = midMatrix[0].ToString() + "\n" + midMatrix[1].ToString() + "\n" + midMatrix[2].ToString() + "\n" + midMatrix[3].ToString() + "\n" + midMatrix[4].ToString() + "\n" + midMatrix[5].ToString() + "\n" + midMatrix[6].ToString() + "\n" + midMatrix[7].ToString() + "\n" + midMatrix[8].ToString() + "\n" + midMatrix[9].ToString();
 		
 		postTest.GetComponent<Text>().text = postMatrix[0].ToString() + "\n" + postMatrix[1].ToString() + "\n" + postMatrix[2].ToString() + "\n" + postMatrix[3].ToString() + "\n" + postMatrix[4].ToString() + "\n" + postMatrix[5].ToString() + "\n" + postMatrix[6].ToString() + "\n" + postMatrix[7].ToString() + "\n" + postMatrix[8].ToString() + "\n" + postMatrix[9].ToString();
-	
+		*/
 	}
 
 
 	public void Evu () {
+
+		//System.IO.File.Create(path + "/TestData/EvuInfo.txt").Close();
+
+
+
+		System.IO.File.WriteAllText(path + "/TestData/EvuInfo.txt", "Evaluation of Data:");
+		System.IO.File.WriteAllLines(path + "/TestData/EvuInfo.txt", midMatrix[1]);
+		//System.IO.File.AppendText(path + "/TestData/EvuInfo.txt").Flush();
+		//System.IO.File.AppendText(path + "/TestData/EvuInfo.txt").Close();
 
 		/*
 		do{
 			
 			preNumber++;
 			infoMatrix[pre] = System.IO.File.ReadAllText(path + "/TestData/Pre-Test/PersonalQuestionnaire" + preNumber + ".txt");
+
+
 			pre++;
 			
 		} while (System.IO.File.Exists(path + "/TestData/Pre-Test/PersonalQuestionnaire" + preNumber + ".txt"));
@@ -115,7 +129,9 @@ public class Evaluate : MonoBehaviour {
 			
 			Number++;
 			midMatrix[mid] = System.IO.File.ReadAllText(path + "/TestData/Mid-Test/QuestionnaireWhilePlaying" + Number + ".txt");
+			System.IO.File.AppendAllText(path + "/TestData/EvuInfo.txt", midMatrix[mid]);
 			mid++;
+
 			
 		} while (System.IO.File.Exists(path + "/TestData/Mid-Test/QuestionnaireWhilePlaying" + Number + ".txt"));
 		
@@ -127,11 +143,12 @@ public class Evaluate : MonoBehaviour {
 			
 			postNumber++;
 			postMatrix[post] = System.IO.File.ReadAllText(path + "/TestData/Post-Test/QuestionnaireAfterPlaying" + postNumber + ".txt");
+			System.IO.File.AppendAllText(path + "/TestData/EvuInfo.txt", postMatrix[post]);
 			post++;
 			
 		} while (System.IO.File.Exists(path + "/TestData/Post-Test/QuestionnaireAfterPlaying" + postNumber + ".txt"));
 		
-		*/
+		/*
 		
 		if(System.IO.File.Exists(path + "/TestData/Pre-Test/PersonalQuestionnaire1.txt"))
 			infoMatrix[0] = System.IO.File.ReadAllText(path + "/TestData/Pre-Test/PersonalQuestionnaire1.txt");
@@ -233,7 +250,7 @@ public class Evaluate : MonoBehaviour {
 									"Pre-Questionnaire:\n" + infoMatrix[0].ToString() +  "\n" + infoMatrix[1].ToString() + "\n" + infoMatrix[2].ToString() + "\n" + infoMatrix[3].ToString() + "\n" + infoMatrix[4].ToString() + "\n" + infoMatrix[5].ToString() + "\n" + infoMatrix[6].ToString() + "\n" + infoMatrix[7].ToString() + "\n" + infoMatrix[8].ToString() + "\n" + infoMatrix[9].ToString()
 		                            + "\n \n \n" + "Mid-Questionnaire:\n" + midMatrix[0].ToString() + "\n" + midMatrix[1].ToString() + "\n" + midMatrix[2].ToString() + "\n" + midMatrix[3].ToString() + "\n" + midMatrix[4].ToString() + "\n" + midMatrix[5].ToString() + "\n" + midMatrix[6].ToString() + "\n" + midMatrix[7].ToString() + "\n" + midMatrix[8].ToString() + "\n" + midMatrix[9].ToString()
 		                            + "\n \n \n" + "Post-Questionnaire:\n" + postMatrix[0].ToString() + "\n" + postMatrix[1].ToString() + "\n" + postMatrix[2].ToString() + "\n" + postMatrix[3].ToString() + "\n" + postMatrix[4].ToString() + "\n" + postMatrix[5].ToString() + "\n" + postMatrix[6].ToString() + "\n" + postMatrix[7].ToString() + "\n" + postMatrix[8].ToString() + "\n" + postMatrix[9].ToString());
-
+		*/
 	}
 
 

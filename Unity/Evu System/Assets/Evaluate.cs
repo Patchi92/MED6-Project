@@ -105,8 +105,8 @@ public class Evaluate : MonoBehaviour {
 
 
 
-		System.IO.File.WriteAllText(path + "/TestData/EvuInfo.txt", "Evaluation of Data:");
-		System.IO.File.WriteAllLines(path + "/TestData/EvuInfo.txt", midMatrix[1]);
+		//System.IO.File.WriteAllText(path + "/TestData/EvuInfo.txt", "Evaluation of Data:");
+		//System.IO.File.WriteAllLines(path + "/TestData/EvuInfo.txt", midMatrix[1]);
 		//System.IO.File.AppendText(path + "/TestData/EvuInfo.txt").Flush();
 		//System.IO.File.AppendText(path + "/TestData/EvuInfo.txt").Close();
 

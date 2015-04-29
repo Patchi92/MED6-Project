@@ -79,7 +79,7 @@ public class EvuControl : MonoBehaviour {
 	public GameObject oneCheckFour;
 	public GameObject oneCheckFive;
 
-	int introQuestionTwo;
+
 
 	int questionTwoPageOne;
 	int questionTwoPageTwo;
@@ -214,9 +214,21 @@ public class EvuControl : MonoBehaviour {
 		if(Page == 0) {
 
 
-			infoQuestion.GetComponent<Text>().text = "Test";
+			infoQuestion.GetComponent<Text>().text = "Narrative Engagement Questionnaire";
 
-			infoText.GetComponent<Text>().text = "Test";
+			infoText.GetComponent<Text>().text = "This questionnaire will be used for academic research purposes only, and no personal information (besides age and gender) will be asked.By pressing “next” you agree to help us by participating in this test, and allow us to use the information provided for our research. Your answers will be completely anonymous.\n" +
+				"\n" +
+				"We would kindly like to ask you to answer each question as honestly as possible - We want your honest opinion!\n" +
+				"\n" +
+				"The questions will be represented in the following way:\n" +
+				"\n" +
+				"“I have read the terms and agreements”\n" +
+				"\n" +
+				"Strongly Agree - Agree - Neither Agree nor Disagree - Disagree - Strongly Disagree\n" +
+				"\n" +
+				"Depending on how much you agree to the statement, you mark the appropriate field. If you want to change your answer, you must first unmark your previous answer.\n" +
+				"\n" +
+				"Thank you so much for helping us, by participating in this test!";
 
 
 			infoQuestion.SetActive(true);
@@ -271,11 +283,11 @@ public class EvuControl : MonoBehaviour {
 
 
 		if(Page == 1) {
-			oneQuestion.GetComponent<Text>().text = "I often spend a lot of time playing games - I play approximately X hours a week";
-			twoQuestion.GetComponent<Text>().text = "I am eager to start playing the game.";
+			oneQuestion.GetComponent<Text>().text = "On average, how many hours do spend playing video games each week?";
+			twoQuestion.GetComponent<Text>().text = "I really want to start playing the game!";
 			threeQuestion.GetComponent<Text>().text = "I tend to like games where narrative plays an important role.";
 			fourQuestion.GetComponent<Text>().text = "I think narrative is essential for my game play experience.";
-			fiveQuestion.GetComponent<Text>().text = "I dislike games where the narrative plays no important part of the experience.";
+			fiveQuestion.GetComponent<Text>().text = "I don't like games that mainly focuses on telling a story.";
 
 
 			oneText.GetComponent<Text>().text = "0-3 Hours";
@@ -351,12 +363,12 @@ public class EvuControl : MonoBehaviour {
 
 			stopSign.SetActive(true);
 
-			threeQuestion.GetComponent<Text>().text = "I understand the main plot in the game.";
+			threeQuestion.GetComponent<Text>().text = "I really want to continue playing the game!";
 
 
 			oneText.GetComponent<Text>().text = "Strongly Agree";
 			twoText.GetComponent<Text>().text = "Agree";
-			threeText.GetComponent<Text>().text = "Neither Agree or Disagree";
+			threeText.GetComponent<Text>().text = "Neither Agree nor Disagree";
 			fourText.GetComponent<Text>().text = "Disagree";
 			fiveText.GetComponent<Text>().text = "Strongly Disagree";
 
@@ -407,11 +419,11 @@ public class EvuControl : MonoBehaviour {
 
 			stopSign.SetActive(false);
 
-			oneQuestion.GetComponent<Text>().text = "I never lost my attention from the computer screen.";
-			twoQuestion.GetComponent<Text>().text = "I never lost my attention from the game.";
-			threeQuestion.GetComponent<Text>().text = "I understand the main plot in the game.";
-			fourQuestion.GetComponent<Text>().text = "I remember all of the information i received during the gameplay.";
-			fiveQuestion.GetComponent<Text>().text = "I noticed and remember the color of the main characters’ clothes.";
+			oneQuestion.GetComponent<Text>().text = "While playing, I lost track of time.";
+			twoQuestion.GetComponent<Text>().text = "I find myself unable to concentrate on the game.";
+			threeQuestion.GetComponent<Text>().text = "While playing, I often find myself thinking about things unrelated to the game.";
+			fourQuestion.GetComponent<Text>().text = "I forgot about my own issues, while I was playing the game.";
+			fiveQuestion.GetComponent<Text>().text = "During the game, I noticed a lot of small details, such as the color of the main character's clothes, for example.";
 
 
 			oneQuestion.SetActive(true);
@@ -455,41 +467,41 @@ public class EvuControl : MonoBehaviour {
 		if(Page == 4) {
 
 
-			oneQuestion.GetComponent<Text>().text = "I felt like I was the main character during the playthrough.";
-			twoQuestion.GetComponent<Text>().text = "The choices I took during the playthrough reflected how I would have acted, if I were in the main characters’ shoes.";
-			threeQuestion.GetComponent<Text>().text = "I felt like the sound were distracting me from the story.";
-			fourQuestion.GetComponent<Text>().text = "I felt like the visuals of the story were a distraction from the narrative, rather than a supporting element.";
-			fiveQuestion.GetComponent<Text>().text = "After playing the game, I keep thinking about the story and what happens next / reflect upon the narrative.";
+			oneQuestion.GetComponent<Text>().text = "During the game, I found myself paying more attention to my surroundings, than to the game.";
+			twoQuestion.GetComponent<Text>().text = "I feel like I am a part of the story.";
+			threeQuestion.GetComponent<Text>().text = "I am eager to find out what happens next in the game.";
+			fourQuestion.GetComponent<Text>().text = "I feel like the narrative have created a new world, that (while playing) seems closer than the real world.";
+			fiveQuestion.GetComponent<Text>().text = "I want to know how the story ends!";
 
 
 		}
 
 		if(Page == 5) {
-			oneQuestion.GetComponent<Text>().text = "I understand the main storyline of the game.";
-			twoQuestion.GetComponent<Text>().text = "I understand the motivations behind the main character(s)’ actions.";
-			threeQuestion.GetComponent<Text>().text = "I understand the motivations of the other characters’ actions.";
-			fourQuestion.GetComponent<Text>().text = "I understand the message the author wants to communicate with this game.";
-			fiveQuestion.GetComponent<Text>().text = "This story is recognizable.";
+			oneQuestion.GetComponent<Text>().text = "I think the story is very logical and convincing.";
+			twoQuestion.GetComponent<Text>().text = "I understand why the characters are acting the way they are.";
+			threeQuestion.GetComponent<Text>().text = "I feel like I have an idea of what might happen next.";
+			fourQuestion.GetComponent<Text>().text = "I feel the plot is very predictable and uninspiring.";
+			fiveQuestion.GetComponent<Text>().text = "I am not sure that I understand the characters.";
 
 
 		}
 
 		if(Page == 6) {
-			oneQuestion.GetComponent<Text>().text = "I felt that I had an emotional connection with the main character(s), during the playthrough.";
-			twoQuestion.GetComponent<Text>().text = "I felt happy for the main character(s) when good things happened to them.";
-			threeQuestion.GetComponent<Text>().text = "I felt sorry for the main character(s) after bad situations or through life choices.";
-			fourQuestion.GetComponent<Text>().text = "The main character feel familiar.";
-			fiveQuestion.GetComponent<Text>().text = "I can identify with the main character(s).";
+			oneQuestion.GetComponent<Text>().text = "I was able to understand the events of the story in a way similar to how the characters understood them.";
+			twoQuestion.GetComponent<Text>().text = "I could easily imagine myself in the situation of some of the characters.";
+			threeQuestion.GetComponent<Text>().text = "I felt sorry for some of the characters in the story.";
+			fourQuestion.GetComponent<Text>().text = "At some points, I felt like I shared the emotions of the characters.";
+			fiveQuestion.GetComponent<Text>().text = "The story have no emotional affect on me.";
 
 
 		}
 
 		if(Page == 7) {
-			oneQuestion.GetComponent<Text>().text = "I regret some of the choices made during my playthrough.";
-			twoQuestion.GetComponent<Text>().text = "I would like to play the game again but with a different story.";
-			threeQuestion.GetComponent<Text>().text = "I would like to play the game again but with a different setting.";
-			fourQuestion.GetComponent<Text>().text = "I would like to play the game again but with a new character.";
-			fiveQuestion.GetComponent<Text>().text = "I would like to play the game again but with a different role.";
+			oneQuestion.GetComponent<Text>().text = "I try to explore the world as much as possible.";
+			twoQuestion.GetComponent<Text>().text = "If I had the chance, I would change some of the choices I made.";
+			threeQuestion.GetComponent<Text>().text = "I don't feel like the choices really have an effect on the story.";
+			fourQuestion.GetComponent<Text>().text = "I try to find alternative ways to complete the game.";
+			fiveQuestion.GetComponent<Text>().text = "I feel the game is very static, leaving little to no room for exploration and experimentation.";
 
 
 		}
@@ -497,11 +509,11 @@ public class EvuControl : MonoBehaviour {
 
 
 		if(Page == 8) {
-			oneQuestion.GetComponent<Text>().text = "I enjoyed the story.";
-			twoQuestion.GetComponent<Text>().text = "I enjoyed the setting.";
-			threeQuestion.GetComponent<Text>().text = "I enjoyed the characters.";
-			fourQuestion.GetComponent<Text>().text = "I enjoyed the gameplay.";
-			fiveQuestion.GetComponent<Text>().text = "I would play similar games again another time.";
+			oneQuestion.GetComponent<Text>().text = "I feel like my choices doesn't matter to the outcome of the story.";
+			twoQuestion.GetComponent<Text>().text = "I don't understand the goal(s) of the characters.";
+			threeQuestion.GetComponent<Text>().text = "I feel that the game world is rich and interesting.";
+			fourQuestion.GetComponent<Text>().text = "I am bored by the story.";
+			fiveQuestion.GetComponent<Text>().text = "I am a bit too stressed to really enjoy the game.";
 
 
 
@@ -511,7 +523,7 @@ public class EvuControl : MonoBehaviour {
 			
 			stopSign.SetActive(true);
 			
-			threeQuestion.GetComponent<Text>().text = "I understand the main plot in the game.";
+			threeQuestion.GetComponent<Text>().text = "I am eager to continue playing the game!";
 			
 
 			
@@ -563,11 +575,11 @@ public class EvuControl : MonoBehaviour {
 
 			stopSign.SetActive(false);
 
-			oneQuestion.GetComponent<Text>().text = "I never lost my attention from the computer screen.";
-			twoQuestion.GetComponent<Text>().text = "I never lost my attention from the game.";
-			threeQuestion.GetComponent<Text>().text = "I understand the main plot in the game.";
-			fourQuestion.GetComponent<Text>().text = "I remember all of the information i received during the gameplay.";
-			fiveQuestion.GetComponent<Text>().text = "I noticed and remember the color of the main characters’ clothes.";
+			oneQuestion.GetComponent<Text>().text = "While playing, I lost track of time.";
+			twoQuestion.GetComponent<Text>().text = "I find myself unable to concentrate on the game.";
+			threeQuestion.GetComponent<Text>().text = "While playing, I often find myself thinking about things unrelated to the game.";
+			fourQuestion.GetComponent<Text>().text = "I forgot about my own issues, while I was playing the game.";
+			fiveQuestion.GetComponent<Text>().text = "During the game, I noticed a lot of small details, such as the color of the main character's clothes, for example.";
 
 			oneQuestion.SetActive(true);
 			twoQuestion.SetActive(true);
@@ -610,56 +622,54 @@ public class EvuControl : MonoBehaviour {
 		
 		if(Page == 11) {
 
-
-
-			oneQuestion.GetComponent<Text>().text = "I felt like I was the main character during the playthrough.";
-			twoQuestion.GetComponent<Text>().text = "The choices I took during the playthrough reflected how I would have acted, if I were in the main characters’ shoes.";
-			threeQuestion.GetComponent<Text>().text = "I felt like the sound were distracting me from the story.";
-			fourQuestion.GetComponent<Text>().text = "I felt like the visuals of the story were a distraction from the narrative, rather than a supporting element.";
-			fiveQuestion.GetComponent<Text>().text = "After playing the game, I keep thinking about the story and what happens next / reflect upon the narrative.";
+			oneQuestion.GetComponent<Text>().text = "During the game, I found myself paying more attention to my surroundings, than to the game.";
+			twoQuestion.GetComponent<Text>().text = "I feel like I am a part of the story.";
+			threeQuestion.GetComponent<Text>().text = "I am eager to find out what happens next in the game.";
+			fourQuestion.GetComponent<Text>().text = "I feel like the narrative have created a new world, that (while playing) seems closer than the real world.";
+			fiveQuestion.GetComponent<Text>().text = "I want to know how the story ends!";
 			
 			
 		}
 		
 		if(Page == 12) {
-			oneQuestion.GetComponent<Text>().text = "I understand the main storyline of the game.";
-			twoQuestion.GetComponent<Text>().text = "I understand the motivations behind the main character(s)’ actions.";
-			threeQuestion.GetComponent<Text>().text = "I understand the motivations of the other characters’ actions.";
-			fourQuestion.GetComponent<Text>().text = "I understand the message the author wants to communicate with this game.";
-			fiveQuestion.GetComponent<Text>().text = "This story is recognizable.";
+			oneQuestion.GetComponent<Text>().text = "I think the story is very logical and convincing.";
+			twoQuestion.GetComponent<Text>().text = "I understand why the characters are acting the way they are.";
+			threeQuestion.GetComponent<Text>().text = "I feel like I have an idea of what might happen next.";
+			fourQuestion.GetComponent<Text>().text = "I feel the plot is very predictable and uninspiring.";
+			fiveQuestion.GetComponent<Text>().text = "I am not sure that I understand the characters.";
 			
 			
 		}
 		
 		if(Page == 13) {
-			oneQuestion.GetComponent<Text>().text = "I felt that I had an emotional connection with the main character(s), during the playthrough.";
-			twoQuestion.GetComponent<Text>().text = "I felt happy for the main character(s) when good things happened to them.";
-			threeQuestion.GetComponent<Text>().text = "I felt sorry for the main character(s) after bad situations or through life choices.";
-			fourQuestion.GetComponent<Text>().text = "The main character feel familiar.";
-			fiveQuestion.GetComponent<Text>().text = "I can identify with the main character(s).";
+			oneQuestion.GetComponent<Text>().text = "I was able to understand the events of the story in a way similar to how the characters understood them.";
+			twoQuestion.GetComponent<Text>().text = "I could easily imagine myself in the situation of some of the characters.";
+			threeQuestion.GetComponent<Text>().text = "I felt sorry for some of the characters in the story.";
+			fourQuestion.GetComponent<Text>().text = "At some points, I felt like I shared the emotions of the characters.";
+			fiveQuestion.GetComponent<Text>().text = "The story have no emotional affect on me.";
 			
 			
 		}
 		
 		if(Page == 14) {
-			oneQuestion.GetComponent<Text>().text = "I regret some of the choices made during my playthrough.";
-			twoQuestion.GetComponent<Text>().text = "I would like to play the game again but with a different story.";
-			threeQuestion.GetComponent<Text>().text = "I would like to play the game again but with a different setting.";
-			fourQuestion.GetComponent<Text>().text = "I would like to play the game again but with a new character.";
-			fiveQuestion.GetComponent<Text>().text = "I would like to play the game again but with a different role.";
+			oneQuestion.GetComponent<Text>().text = "I try to explore the world as much as possible.";
+			twoQuestion.GetComponent<Text>().text = "If I had the chance, I would change some of the choices I made.";
+			threeQuestion.GetComponent<Text>().text = "I don't feel like the choices really have an effect on the story.";
+			fourQuestion.GetComponent<Text>().text = "I try to find alternative ways to complete the game.";
+			fiveQuestion.GetComponent<Text>().text = "I feel the game is very static, leaving little to no room for exploration and experimentation.";
 			
 			
 		}
 		
+		
+		
 		if(Page == 15) {
-			oneQuestion.GetComponent<Text>().text = "I enjoyed the story.";
-			twoQuestion.GetComponent<Text>().text = "I enjoyed the setting.";
-			threeQuestion.GetComponent<Text>().text = "I enjoyed the characters.";
-			fourQuestion.GetComponent<Text>().text = "I enjoyed the gameplay.";
-			fiveQuestion.GetComponent<Text>().text = "I would play similar games again another time.";
-			
-			
-			
+			oneQuestion.GetComponent<Text>().text = "I feel like my choices doesn't matter to the outcome of the story.";
+			twoQuestion.GetComponent<Text>().text = "I don't understand the goal(s) of the characters.";
+			threeQuestion.GetComponent<Text>().text = "I feel that the game world is rich and interesting.";
+			fourQuestion.GetComponent<Text>().text = "I am bored by the story.";
+			fiveQuestion.GetComponent<Text>().text = "I am a bit too stressed to really enjoy the game.";
+
 			nextButton.SetActive(false);
 			doneButton.SetActive(true);
 		}
@@ -681,7 +691,7 @@ public class EvuControl : MonoBehaviour {
 				questionOnePageOne = 5;
 
 			if(Page == 4)
-				questionOnePageTwo = 5;
+				questionOnePageTwo = 1;
 			
 			if(Page == 5)
 				questionOnePageThree = 5;
@@ -690,16 +700,16 @@ public class EvuControl : MonoBehaviour {
 				questionOnePageFour = 5;
 
 			if(Page == 7)
-				questionOnePageFive = 1;
+				questionOnePageFive = 5;
 
 			if(Page == 8)
-				questionOnePageSix = 5;
+				questionOnePageSix = 1;
 
 			if(Page == 10)
 				endQuestionOnePageOne = 5;
 			
 			if(Page == 11)
-				endQuestionOnePageTwo = 5;
+				endQuestionOnePageTwo = 1;
 			
 			if(Page == 12)
 				endQuestionOnePageThree = 5;
@@ -708,10 +718,10 @@ public class EvuControl : MonoBehaviour {
 				endQuestionOnePageFour = 5;
 			
 			if(Page == 14)
-				endQuestionOnePageFive = 1;
+				endQuestionOnePageFive = 5;
 			
 			if(Page == 15)
-				endQuestionOnePageSix = 5;
+				endQuestionOnePageSix = 1;
 
 			oneCheckTwo.GetComponent<Toggle>().isOn = false;
 			oneCheckThree.GetComponent<Toggle>().isOn = false;
@@ -729,7 +739,7 @@ public class EvuControl : MonoBehaviour {
 				questionOnePageOne = 4;
 			
 			if(Page == 4)
-				questionOnePageTwo = 4;
+				questionOnePageTwo = 2;
 			
 			if(Page == 5)
 				questionOnePageThree = 4;
@@ -738,16 +748,16 @@ public class EvuControl : MonoBehaviour {
 				questionOnePageFour = 4;
 			
 			if(Page == 7)
-				questionOnePageFive = 2;
+				questionOnePageFive = 4;
 			
 			if(Page == 8)
-				questionOnePageSix = 4;
+				questionOnePageSix = 2;
 
 			if(Page == 10)
 				endQuestionOnePageOne = 4;
 			
 			if(Page == 11)
-				endQuestionOnePageTwo = 4;
+				endQuestionOnePageTwo = 2;
 			
 			if(Page == 12)
 				endQuestionOnePageThree = 4;
@@ -756,10 +766,10 @@ public class EvuControl : MonoBehaviour {
 				endQuestionOnePageFour = 4;
 			
 			if(Page == 14)
-				endQuestionOnePageFive = 2;
+				endQuestionOnePageFive = 4;
 			
 			if(Page == 15)
-				endQuestionOnePageSix = 4;
+				endQuestionOnePageSix = 2;
 			
 			oneCheckFive.GetComponent<Toggle>().isOn = false;
 			oneCheckThree.GetComponent<Toggle>().isOn = false;
@@ -829,7 +839,7 @@ public class EvuControl : MonoBehaviour {
 				questionOnePageOne = 2;
 			
 			if(Page == 4)
-				questionOnePageTwo = 2;
+				questionOnePageTwo = 4;
 			
 			if(Page == 5)
 				questionOnePageThree = 2;
@@ -838,16 +848,16 @@ public class EvuControl : MonoBehaviour {
 				questionOnePageFour = 2;
 			
 			if(Page == 7)
-				questionOnePageFive = 4;
+				questionOnePageFive = 2;
 			
 			if(Page == 8)
-				questionOnePageSix = 2;
+				questionOnePageSix = 4;
 
 			if(Page == 10)
 				endQuestionOnePageOne = 2;
 			
 			if(Page == 11)
-				endQuestionOnePageTwo = 2;
+				endQuestionOnePageTwo = 4;
 			
 			if(Page == 12)
 				endQuestionOnePageThree = 2;
@@ -856,10 +866,10 @@ public class EvuControl : MonoBehaviour {
 				endQuestionOnePageFour = 2;
 			
 			if(Page == 14)
-				endQuestionOnePageFive = 4;
+				endQuestionOnePageFive = 2;
 			
 			if(Page == 15)
-				endQuestionOnePageSix = 2;
+				endQuestionOnePageSix = 4;
 			
 			
 			oneCheckTwo.GetComponent<Toggle>().isOn = false;
@@ -879,7 +889,7 @@ public class EvuControl : MonoBehaviour {
 				questionOnePageOne = 1;
 			
 			if(Page == 4)
-				questionOnePageTwo = 1;
+				questionOnePageTwo = 5;
 			
 			if(Page == 5)
 				questionOnePageThree = 1;
@@ -888,16 +898,16 @@ public class EvuControl : MonoBehaviour {
 				questionOnePageFour = 1;
 			
 			if(Page == 7)
-				questionOnePageFive = 5;
+				questionOnePageFive = 1;
 			
 			if(Page == 8)
-				questionOnePageSix = 1;
+				questionOnePageSix = 5;
 
 			if(Page == 10)
 				endQuestionOnePageOne = 1;
 			
 			if(Page == 11)
-				endQuestionOnePageTwo = 1;
+				endQuestionOnePageTwo = 5;
 			
 			if(Page == 12)
 				endQuestionOnePageThree = 1;
@@ -906,10 +916,10 @@ public class EvuControl : MonoBehaviour {
 				endQuestionOnePageFour = 1;
 			
 			if(Page == 14)
-				endQuestionOnePageFive = 5;
+				endQuestionOnePageFive = 1;
 			
 			if(Page == 15)
-				endQuestionOnePageSix = 1;
+				endQuestionOnePageSix = 5;
 
 			oneCheckTwo.GetComponent<Toggle>().isOn = false;
 			oneCheckThree.GetComponent<Toggle>().isOn = false;
@@ -931,7 +941,7 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionOne = 5;
 			
 			if(Page == 3)
-				questionTwoPageOne = 5;
+				questionTwoPageOne = 1;
 			
 			if(Page == 4)
 				questionTwoPageTwo = 5;
@@ -946,10 +956,10 @@ public class EvuControl : MonoBehaviour {
 				questionTwoPageFive = 5;
 			
 			if(Page == 8)
-				questionTwoPageSix = 5;
+				questionTwoPageSix = 1;
 
 			if(Page == 10)
-				endQuestionTwoPageOne = 5;
+				endQuestionTwoPageOne = 1;
 			
 			if(Page == 11)
 				endQuestionTwoPageTwo = 5;
@@ -964,7 +974,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionTwoPageFive = 5;
 			
 			if(Page == 15)
-				endQuestionTwoPageSix = 5;
+				endQuestionTwoPageSix = 1;
 			
 			twoCheckTwo.GetComponent<Toggle>().isOn = false;
 			twoCheckThree.GetComponent<Toggle>().isOn = false;
@@ -979,7 +989,7 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionOne = 4;
 			
 			if(Page == 3)
-				questionTwoPageOne = 4;
+				questionTwoPageOne = 2;
 			
 			if(Page == 4)
 				questionTwoPageTwo = 4;
@@ -994,10 +1004,10 @@ public class EvuControl : MonoBehaviour {
 				questionTwoPageFive = 4;
 			
 			if(Page == 8)
-				questionTwoPageSix = 4;
+				questionTwoPageSix = 2;
 
 			if(Page == 10)
-				endQuestionTwoPageOne = 4;
+				endQuestionTwoPageOne = 2;
 			
 			if(Page == 11)
 				endQuestionTwoPageTwo = 4;
@@ -1012,7 +1022,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionTwoPageFive = 4;
 			
 			if(Page == 15)
-				endQuestionTwoPageSix = 4;
+				endQuestionTwoPageSix = 2;
 			
 			
 			twoCheckFive.GetComponent<Toggle>().isOn = false;
@@ -1080,7 +1090,7 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionOne = 2;
 			
 			if(Page == 3)
-				questionTwoPageOne = 2;
+				questionTwoPageOne = 4;
 			
 			if(Page == 4)
 				questionTwoPageTwo = 2;
@@ -1095,10 +1105,10 @@ public class EvuControl : MonoBehaviour {
 				questionTwoPageFive = 2;
 			
 			if(Page == 8)
-				questionTwoPageSix = 2;
+				questionTwoPageSix = 4;
 
 			if(Page == 10)
-				endQuestionTwoPageOne = 2;
+				endQuestionTwoPageOne = 4;
 			
 			if(Page == 11)
 				endQuestionTwoPageTwo = 2;
@@ -1113,7 +1123,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionTwoPageFive = 2;
 			
 			if(Page == 15)
-				endQuestionTwoPageSix = 2;
+				endQuestionTwoPageSix = 4;
 			
 			
 			twoCheckTwo.GetComponent<Toggle>().isOn = false;
@@ -1130,7 +1140,7 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionOne = 1;
 
 			if(Page == 3)
-				questionTwoPageOne = 1;
+				questionTwoPageOne = 5;
 			
 			if(Page == 4)
 				questionTwoPageTwo = 1;
@@ -1145,10 +1155,10 @@ public class EvuControl : MonoBehaviour {
 				questionTwoPageFive = 1;
 			
 			if(Page == 8)
-				questionTwoPageSix = 1;
+				questionTwoPageSix = 5;
 
 			if(Page == 10)
-				endQuestionTwoPageOne = 1;
+				endQuestionTwoPageOne = 5;
 			
 			if(Page == 11)
 				endQuestionTwoPageTwo = 1;
@@ -1163,7 +1173,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionTwoPageFive = 1;
 			
 			if(Page == 15)
-				endQuestionTwoPageSix = 1;
+				endQuestionTwoPageSix = 5;
 			
 			twoCheckTwo.GetComponent<Toggle>().isOn = false;
 			twoCheckThree.GetComponent<Toggle>().isOn = false;
@@ -1191,10 +1201,10 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionTwo = 5;
 			
 			if(Page == 3)
-				questionThreePageOne = 5;
+				questionThreePageOne = 1;
 			
 			if(Page == 4)
-				questionThreePageTwo = 1;
+				questionThreePageTwo = 5;
 			
 			if(Page == 5)
 				questionThreePageThree = 5;
@@ -1203,7 +1213,7 @@ public class EvuControl : MonoBehaviour {
 				questionThreePageFour = 5;
 			
 			if(Page == 7)
-				questionThreePageFive = 5;
+				questionThreePageFive = 1;
 			
 			if(Page == 8)
 				questionThreePageSix = 5;
@@ -1212,10 +1222,10 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionThree = 5;
 
 			if(Page == 10)
-				endQuestionThreePageOne = 5;
+				endQuestionThreePageOne = 1;
 			
 			if(Page == 11)
-				endQuestionThreePageTwo = 1;
+				endQuestionThreePageTwo = 5;
 			
 			if(Page == 12)
 				endQuestionThreePageThree = 5;
@@ -1224,7 +1234,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionThreePageFour = 5;
 			
 			if(Page == 14)
-				endQuestionThreePageFive = 5;
+				endQuestionThreePageFive = 1;
 			
 			if(Page == 15)
 				endQuestionThreePageSix = 5;
@@ -1245,10 +1255,10 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionTwo = 4;
 
 			if(Page == 3)
-				questionThreePageOne = 4;
+				questionThreePageOne = 2;
 			
 			if(Page == 4)
-				questionThreePageTwo = 2;
+				questionThreePageTwo = 4;
 			
 			if(Page == 5)
 				questionThreePageThree = 4;
@@ -1257,7 +1267,7 @@ public class EvuControl : MonoBehaviour {
 				questionThreePageFour = 4;
 			
 			if(Page == 7)
-				questionThreePageFive = 4;
+				questionThreePageFive = 2;
 			
 			if(Page == 8)
 				questionThreePageSix = 4;
@@ -1266,10 +1276,10 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionThree = 4;
 
 			if(Page == 10)
-				endQuestionThreePageOne = 4;
+				endQuestionThreePageOne = 2;
 			
 			if(Page == 11)
-				endQuestionThreePageTwo = 2;
+				endQuestionThreePageTwo = 4;
 			
 			if(Page == 12)
 				endQuestionThreePageThree = 4;
@@ -1278,7 +1288,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionThreePageFour = 4;
 			
 			if(Page == 14)
-				endQuestionThreePageFive = 4;
+				endQuestionThreePageFive = 2;
 			
 			if(Page == 15)
 				endQuestionThreePageSix = 4;
@@ -1358,10 +1368,10 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionTwo = 2;
 
 			if(Page == 3)
-				questionThreePageOne = 2;
+				questionThreePageOne = 4;
 			
 			if(Page == 4)
-				questionThreePageTwo = 4;
+				questionThreePageTwo = 2;
 			
 			if(Page == 5)
 				questionThreePageThree = 2;
@@ -1370,7 +1380,7 @@ public class EvuControl : MonoBehaviour {
 				questionThreePageFour = 2;
 			
 			if(Page == 7)
-				questionThreePageFive = 2;
+				questionThreePageFive = 4;
 					
 			if(Page == 8)
 				questionThreePageSix = 2;
@@ -1379,10 +1389,10 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionThree = 2;
 
 			if(Page == 10)
-				endQuestionThreePageOne = 2;
+				endQuestionThreePageOne = 4;
 			
 			if(Page == 11)
-				endQuestionThreePageTwo = 4;
+				endQuestionThreePageTwo = 2;
 			
 			if(Page == 12)
 				endQuestionThreePageThree = 2;
@@ -1391,7 +1401,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionThreePageFour = 2;
 			
 			if(Page == 14)
-				endQuestionThreePageFive = 2;
+				endQuestionThreePageFive = 4;
 			
 			if(Page == 15)
 				endQuestionThreePageSix = 2;
@@ -1414,10 +1424,10 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionTwo = 1;
 
 			if(Page == 3)
-				questionThreePageOne = 1;
+				questionThreePageOne = 5;
 			
 			if(Page == 4)
-				questionThreePageTwo = 5;
+				questionThreePageTwo = 1;
 			
 			if(Page == 5)
 				questionThreePageThree = 1;
@@ -1435,10 +1445,10 @@ public class EvuControl : MonoBehaviour {
 				cdQuestionThree = 1;
 
 			if(Page == 10)
-				endQuestionThreePageOne = 1;
+				endQuestionThreePageOne = 5;
 			
 			if(Page == 11)
-				endQuestionThreePageTwo = 5;
+				endQuestionThreePageTwo = 1;
 			
 			if(Page == 12)
 				endQuestionThreePageThree = 1;
@@ -1447,7 +1457,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionThreePageFour = 1;
 			
 			if(Page == 14)
-				endQuestionThreePageFive = 1;
+				endQuestionThreePageFive = 5;
 			
 			if(Page == 15)
 				endQuestionThreePageSix = 1;
@@ -1475,10 +1485,10 @@ public class EvuControl : MonoBehaviour {
 				questionFourPageOne = 5;
 			
 			if(Page == 4)
-				questionFourPageTwo = 1;
+				questionFourPageTwo = 5;
 			
 			if(Page == 5)
-				questionFourPageThree = 5;
+				questionFourPageThree = 1;
 			
 			if(Page == 6)
 				questionFourPageFour = 5;
@@ -1487,16 +1497,16 @@ public class EvuControl : MonoBehaviour {
 				questionFourPageFive = 5;
 			
 			if(Page == 8)
-				questionFourPageSix = 5;
+				questionFourPageSix = 1;
 
 			if(Page == 10)
 				endQuestionFourPageOne = 5;
 			
 			if(Page == 11)
-				endQuestionFourPageTwo = 1;
+				endQuestionFourPageTwo = 5;
 			
 			if(Page == 12)
-				endQuestionFourPageThree = 5;
+				endQuestionFourPageThree = 1;
 			
 			if(Page == 13)
 				endQuestionFourPageFour = 5;
@@ -1505,7 +1515,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionFourPageFive = 5;
 			
 			if(Page == 15)
-				endQuestionFourPageSix = 5;
+				endQuestionFourPageSix = 1;
 			
 			fourCheckTwo.GetComponent<Toggle>().isOn = false;
 			fourCheckThree.GetComponent<Toggle>().isOn = false;
@@ -1523,10 +1533,10 @@ public class EvuControl : MonoBehaviour {
 				questionFourPageOne = 4;
 			
 			if(Page == 4)
-				questionFourPageTwo = 2;
+				questionFourPageTwo = 4;
 			
 			if(Page == 5)
-				questionFourPageThree = 4;
+				questionFourPageThree = 2;
 			
 			if(Page == 6)
 				questionFourPageFour = 4;
@@ -1535,16 +1545,16 @@ public class EvuControl : MonoBehaviour {
 				questionFourPageFive = 4;
 			
 			if(Page == 8)
-				questionFourPageSix = 4;
+				questionFourPageSix = 2;
 
 			if(Page == 10)
 				endQuestionFourPageOne = 4;
 			
 			if(Page == 11)
-				endQuestionFourPageTwo = 2;
+				endQuestionFourPageTwo = 4;
 			
 			if(Page == 12)
-				endQuestionFourPageThree = 4;
+				endQuestionFourPageThree = 2;
 			
 			if(Page == 13)
 				endQuestionFourPageFour = 4;
@@ -1553,7 +1563,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionFourPageFive = 4;
 			
 			if(Page == 15)
-				endQuestionFourPageSix = 4;
+				endQuestionFourPageSix = 2;
 			
 			
 			fourCheckFive.GetComponent<Toggle>().isOn = false;
@@ -1625,10 +1635,10 @@ public class EvuControl : MonoBehaviour {
 				questionFourPageOne = 2;
 			
 			if(Page == 4)
-				questionFourPageTwo = 4;
+				questionFourPageTwo = 2;
 			
 			if(Page == 5)
-				questionFourPageThree = 2;
+				questionFourPageThree = 4;
 			
 			if(Page == 6)
 				questionFourPageFour = 2;
@@ -1637,16 +1647,16 @@ public class EvuControl : MonoBehaviour {
 				questionFourPageFive = 2;
 					
 			if(Page == 8)
-				questionFourPageSix = 2;
+				questionFourPageSix = 4;
 
 			if(Page == 10)
 				endQuestionFourPageOne = 2;
 			
 			if(Page == 11)
-				endQuestionFourPageTwo = 4;
+				endQuestionFourPageTwo = 2;
 			
 			if(Page == 12)
-				endQuestionFourPageThree = 2;
+				endQuestionFourPageThree = 4;
 			
 			if(Page == 13)
 				endQuestionFourPageFour = 2;
@@ -1655,7 +1665,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionFourPageFive = 2;
 			
 			if(Page == 15)
-				endQuestionFourPageSix = 2;
+				endQuestionFourPageSix = 4;
 			
 			
 			fourCheckTwo.GetComponent<Toggle>().isOn = false;
@@ -1675,10 +1685,10 @@ public class EvuControl : MonoBehaviour {
 				questionFourPageOne = 1;
 			
 			if(Page == 4)
-				questionFourPageTwo = 5;
+				questionFourPageTwo = 1;
 			
 			if(Page == 5)
-				questionFourPageThree = 1;
+				questionFourPageThree = 5;
 			
 			if(Page == 6)
 				questionFourPageFour = 1;
@@ -1687,16 +1697,16 @@ public class EvuControl : MonoBehaviour {
 				questionFourPageFive = 1;
 			
 			if(Page == 8)
-				questionFourPageSix = 1;
+				questionFourPageSix = 5;
 
 			if(Page == 10)
 				endQuestionFourPageOne = 1;
 			
 			if(Page == 11)
-				endQuestionFourPageTwo = 5;
+				endQuestionFourPageTwo = 1;
 			
 			if(Page == 12)
-				endQuestionFourPageThree = 1;
+				endQuestionFourPageThree = 5;
 			
 			if(Page == 13)
 				endQuestionFourPageFour = 1;
@@ -1705,7 +1715,7 @@ public class EvuControl : MonoBehaviour {
 				endQuestionFourPageFive = 1;
 			
 			if(Page == 15)
-				endQuestionFourPageSix = 1;
+				endQuestionFourPageSix = 5;
 			
 			fourCheckTwo.GetComponent<Toggle>().isOn = false;
 			fourCheckThree.GetComponent<Toggle>().isOn = false;
@@ -1733,16 +1743,16 @@ public class EvuControl : MonoBehaviour {
 				questionFivePageTwo = 5;
 			
 			if(Page == 5)
-				questionFivePageThree = 5;
+				questionFivePageThree = 1;
 			
 			if(Page == 6)
-				questionFivePageFour = 5;
+				questionFivePageFour = 1;
 			
 			if(Page == 7)
-				questionFivePageFive = 5;
+				questionFivePageFive = 1;
 			
 			if(Page == 8)
-				questionFivePageSix = 5;
+				questionFivePageSix = 1;
 
 			if(Page == 10)
 				endQuestionFivePageOne = 5;
@@ -1751,16 +1761,16 @@ public class EvuControl : MonoBehaviour {
 				endQuestionFivePageTwo = 5;
 			
 			if(Page == 12)
-				endQuestionFivePageThree = 5;
+				endQuestionFivePageThree = 1;
 			
 			if(Page == 13)
-				endQuestionFivePageFour = 5;
+				endQuestionFivePageFour = 1;
 			
 			if(Page == 14)
-				endQuestionFivePageFive = 5;
+				endQuestionFivePageFive = 1;
 			
 			if(Page == 15)
-				endQuestionFivePageSix = 5;
+				endQuestionFivePageSix = 1;
 			
 			fiveCheckTwo.GetComponent<Toggle>().isOn = false;
 			fiveCheckThree.GetComponent<Toggle>().isOn = false;
@@ -1781,16 +1791,16 @@ public class EvuControl : MonoBehaviour {
 				questionFivePageTwo = 4;
 			
 			if(Page == 5)
-				questionFivePageThree = 4;
+				questionFivePageThree = 2;
 			
 			if(Page == 6)
-				questionFivePageFour = 4;
+				questionFivePageFour = 2;
 			
 			if(Page == 7)
-				questionFivePageFive = 4;
+				questionFivePageFive = 2;
 			
 			if(Page == 8)
-				questionFivePageSix = 4;
+				questionFivePageSix = 2;
 
 			if(Page == 10)
 				endQuestionFivePageOne = 4;
@@ -1799,16 +1809,16 @@ public class EvuControl : MonoBehaviour {
 				endQuestionFivePageTwo = 4;
 			
 			if(Page == 12)
-				endQuestionFivePageThree = 4;
+				endQuestionFivePageThree = 2;
 			
 			if(Page == 13)
-				endQuestionFivePageFour = 4;
+				endQuestionFivePageFour = 2;
 			
 			if(Page == 14)
-				endQuestionFivePageFive = 4;
+				endQuestionFivePageFive = 2;
 			
 			if(Page == 15)
-				endQuestionFivePageSix = 4;
+				endQuestionFivePageSix = 2;
 			
 			
 			fiveCheckFive.GetComponent<Toggle>().isOn = false;
@@ -1882,16 +1892,16 @@ public class EvuControl : MonoBehaviour {
 				questionFivePageTwo = 2;
 			
 			if(Page == 5)
-				questionFivePageThree = 2;
+				questionFivePageThree = 4;
 			
 			if(Page == 6)
-				questionFivePageFour = 2;
+				questionFivePageFour = 4;
 			
 			if(Page == 7)
-				questionFivePageFive = 2;
+				questionFivePageFive = 4;
 					
 			if(Page == 8)
-				questionFivePageSix = 2;
+				questionFivePageSix = 4;
 
 			if(Page == 10)
 				endQuestionFivePageOne = 2;
@@ -1900,16 +1910,16 @@ public class EvuControl : MonoBehaviour {
 				endQuestionFivePageTwo = 2;
 			
 			if(Page == 12)
-				endQuestionFivePageThree = 2;
+				endQuestionFivePageThree = 4;
 			
 			if(Page == 13)
-				endQuestionFivePageFour = 2;
+				endQuestionFivePageFour = 4;
 			
 			if(Page == 14)
-				endQuestionFivePageFive = 2;
+				endQuestionFivePageFive = 4;
 			
 			if(Page == 15)
-				endQuestionFivePageSix = 2;
+				endQuestionFivePageSix = 4;
 			
 			
 			fiveCheckTwo.GetComponent<Toggle>().isOn = false;
@@ -1932,16 +1942,16 @@ public class EvuControl : MonoBehaviour {
 				questionFivePageTwo = 1;
 			
 			if(Page == 5)
-				questionFivePageThree = 1;
+				questionFivePageThree = 5;
 			
 			if(Page == 6)
-				questionFivePageFour = 1;
+				questionFivePageFour = 5;
 			
 			if(Page == 7)
-				questionFivePageFive = 1;
+				questionFivePageFive = 5;
 			
 			if(Page == 8)
-				questionFivePageSix = 1;
+				questionFivePageSix = 5;
 
 			if(Page == 10)
 				endQuestionFivePageOne = 1;
@@ -1950,16 +1960,16 @@ public class EvuControl : MonoBehaviour {
 				endQuestionFivePageTwo = 1;
 			
 			if(Page == 12)
-				endQuestionFivePageThree = 1;
+				endQuestionFivePageThree = 5;
 			
 			if(Page == 13)
-				endQuestionFivePageFour = 1;
+				endQuestionFivePageFour = 5;
 			
 			if(Page == 14)
-				endQuestionFivePageFive = 1;
+				endQuestionFivePageFive = 5;
 			
 			if(Page == 15)
-				endQuestionFivePageSix = 1;
+				endQuestionFivePageSix = 5;
 			
 			fiveCheckTwo.GetComponent<Toggle>().isOn = false;
 			fiveCheckThree.GetComponent<Toggle>().isOn = false;
@@ -2527,7 +2537,7 @@ public void QuestionsDone () {
 			
 			
 			System.IO.File.WriteAllText( path + "/TestData/Pre-Test/InfoQuestions" + preNumber + ".txt", 
-			                            introQuestionTwo + " " + introQuestionThree + " " + introQuestionFour + " " + introQuestionFive);
+			                             introQuestionThree + " " + introQuestionFour + " " + introQuestionFive);
 
 			preNumber = 0;
 

@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\EvuControl.cs">
     <Files>
-      <File FileName="Assets\EvuControl.cs" Line="2617" Column="4" />
+      <File FileName="Assets\EvuControl.cs" Line="261" Column="34" />
       <File FileName="Assets\Evaluate.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

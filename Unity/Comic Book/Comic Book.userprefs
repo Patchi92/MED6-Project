@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Evu System\Assets\EvuControl.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Main Menu\IntroMenu.cs">
     <Files>
-      <File FileName="..\Evu System\Assets\EvuControl.cs" Line="36" Column="21" />
+      <File FileName="Assets\Main Menu\IntroMenu.cs" Line="47" Column="17" />
+      <File FileName="Assets\Scripts\MainMenu.cs" Line="20" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

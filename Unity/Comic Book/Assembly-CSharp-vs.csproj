@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\EvuControl.cs" />
      <Compile Include="Assets\Main Menu\IntroMenu.cs" />
      <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\Scenes\Act One\ActOneBranch.cs" />
@@ -59,7 +58,6 @@
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\TestBrancheSystem.cs" />
      <Compile Include="Assets\TestObject.cs" />
-     <None Include="Assets\TestToUs.txt" />
      <None Include="Assets\Scenes\Billboard.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
